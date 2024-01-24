@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="truechange.tcaceeditor.TcAceEditor" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Tc Ace Editor</name>
+    <description>AceEditor for Mendix</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="language" type="enumeration" defaultValue="html">
+                <caption>Language Style</caption>
+                <description>The attribute that contains the Editor Source value</description>               
+                <enumerationValues>
+                    <enumerationValue key="html">Html</enumerationValue>
+                    <enumerationValue key="sql">Sql</enumerationValue>                    
+                    <enumerationValue key="javascript">Javascript</enumerationValue>
+                    <enumerationValue key="json">Json</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="editorValue" type="attribute" required="true" onChange="onChange">
+                <caption>Value attribute</caption>
+                <description>The attribute that contains the Editor Source value</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>  
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change action</caption>
+                <description>Action to trigger when input is changed</description>
+            </property>
+        </propertyGroup>    
+    </properties>
+</widget>

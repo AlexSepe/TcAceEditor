@@ -1,0 +1,52 @@
+{
+  "name": "tcaceeditor",
+  "widgetName": "TcAceEditor",
+  "version": "1.0.0",
+  "description": "AceEditor for Mendix",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Alexandre Sepe",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "../../../Mendix_Apps/OQLReportsEditor-main",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "truechange",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^10.5.1",
+    "@types/big.js": "^6.0.2",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^29.0.0"
+  },
+  "dependencies": {
+    "react-ace": "^10.1.0"
+  },
+  "overrides": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.70.7",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "@types/react-native": "0.70.7"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.70.7",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "@types/react-native": "0.70.7"
+  }
+}
