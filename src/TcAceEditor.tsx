@@ -21,7 +21,7 @@ export class TcAceEditor extends Component<TcAceEditorContainerProps> {
                 onChange={this.onChangeEditorHandle}
                 value={value}
                 style={this.props.style}
-                className={this.props.class}
+                className={"tcAceEditor " + this.props.class}
             />
         );
     }

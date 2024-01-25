@@ -52,7 +52,6 @@ export class Editor extends Component<EditorProps> {
                 theme={this.props.dark ? "chaos" : "xcode"}
                 onChange={this.handleChange}
                 fontSize={14}
-                minLines={20}
                 showPrintMargin={this.showPrintMargin}
                 showGutter={this.showGutter}
                 highlightActiveLine={this.highlightActiveLine}
